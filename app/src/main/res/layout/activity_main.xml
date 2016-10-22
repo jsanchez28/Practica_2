@@ -9,10 +9,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.cisco.practica_2.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mensaje"
-        android:id="@+id/textView" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mensaje"
+            android:id="@+id/tvMensaje"
+            android:textAlignment="center"
+            android:textSize="@dimen/texto"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_usuario"
+            android:id="@+id/tvUsario"
+            android:textSize="@dimen/texto"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_contrasenia"
+            android:id="@+id/tvContrasenia"
+            android:inputType="textPassword"
+            android:textSize="@dimen/texto"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_weight="0.82" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btningresar"
+            android:id="@+id/btnIngreso"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="presionar_boton"/>
+    </LinearLayout>
+
 
 </RelativeLayout>

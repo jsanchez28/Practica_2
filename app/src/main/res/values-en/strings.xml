@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Practice_2</string>
-    <string name="mensaje">Hello World!!</string>
+    <string name="mensaje">Enter to application</string>
+    <string name="btningresar">Enter</string>
+    <string name="alerta">Message</string>
+    <string name="hint_usuario">User:</string>
+    <string name="hint_contrasenia">Password:</string>
 </resources>
